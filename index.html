@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Catalog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Product Catalog</h1>
+
+  <form id="product-form">
+    <div>
+      <label for="quantity-a">Product A Quantity:</label>
+      <input type="number" id="quantity-a" min="0" required>
+      <label for="gift-wrap-a">Gift Wrap:</label>
+      <input type="checkbox" id="gift-wrap-a">
+    </div>
+    <div>
+      <label for="quantity-b">Product B Quantity:</label>
+      <input type="number" id="quantity-b" min="0" required>
+      <label for="gift-wrap-b">Gift Wrap:</label>
+      <input type="checkbox" id="gift-wrap-b">
+    </div>
+    <div>
+      <label for="quantity-c">Product C Quantity:</label>
+      <input type="number" id="quantity-c" min="0" required>
+      <label for="gift-wrap-c">Gift Wrap:</label>
+      <input type="checkbox" id="gift-wrap-c">
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result" class="hidden">
+    <h2>Cart Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody id="cart-details"></tbody>
+    </table>
+    <p id="subtotal"></p>
+    <p id="discount"></p>
+    <p id="shipping-fee"></p>
+    <p id="gift-wrap-fee"></p>
+    <p id="total"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
